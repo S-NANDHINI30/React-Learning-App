@@ -1,0 +1,37 @@
+/* @import 'primereact/resources/themes/bootstrap4-light-blue/theme.css'; */
+:root {
+    --primary-color: #2e70db;
+    --primary-color-text: #fff;
+  }
+  .p-button {
+    background-color:var(--primary-color);
+    color: var(--primary-color-text);
+    border: none;
+  }
+  .main
+  {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 82, 0);
+    min-height: 100vh
+  }
+  .veggiesImg
+  {
+    height: 100vh;
+    width: 20vw;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .sushiImg
+  {
+    height: 100vh;
+    width: 20vw;
+    object-fit: cover;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }

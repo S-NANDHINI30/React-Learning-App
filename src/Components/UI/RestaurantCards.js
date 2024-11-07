@@ -1,5 +1,4 @@
-import { IMG_CDN_URL } from "../asset/constants"; 
-
+import { IMG_CDN_URL } from "../../../asset/constants";
 const RestaurantCards = ({
     cloudinaryImageId,
     name,
@@ -10,21 +9,22 @@ const RestaurantCards = ({
     avgRating,
 }) => {
     return (
-        <div className="card">
+        <div className="card my-3">
             <img
+            className="w-full h-11rem border-round-xl"
                 src={`${IMG_CDN_URL}${cloudinaryImageId}`}
                 alt={name}
             />
-            <h2 className="font-bold mt-3">{name}</h2>
-            <h4>
+            <h2 className="font-bold my-2">{name}</h2>
+            <span>
                     <i className="fa-solid fa-star"></i>
                     {avgRating}
-                </h4>
-            <h4>{cuisines.join(", ")}</h4>
-            <h4>{areaName}</h4>
+                </span>
+            <p className="my-1">{cuisines}</p>
+            <p className="my-1">{areaName}</p>
             <span>      
-                <h4>{lastMileTravelString}</h4>
-                <h4>{costForTwo}</h4>
+                <p className="my-1">{lastMileTravelString}</p>
+                <p className="my-1">{costForTwo}</p>
             </span>
         </div>
     );

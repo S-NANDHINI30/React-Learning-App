@@ -33,3 +33,25 @@ mounting
 
 component unmounting
 -it will disapper from the html (removing from the ui)
+
+# 4 Suspense - component (Lazy Loading)
+Suspense with fallback attribute used to load piece of jsx meanwhile the actual component is loading 
+wrap the components which is not available 
+
+# 5 Redux 
+
+When click on the add button (In Restaraunt Menu) it will dispatches an action which will call the reducer function,
+which modifies the slice of the reduce store(cart).
+-> To read the data from the card slice, we will use selector to read the data from the store and the selector modifies the react component (gives the data).
+-> Subscribe - subscribing to the store(sync with the store) if the data in the store changes header component(cart) will update automatically
+-> subscribing done using selectore
+Jargons used :
+    Dispatch
+    Action
+    Reducer
+    Slice 
+    Store
+    Subscribe
+# react-redux & reactjs.toolkit(rtk)
+- Configuring store (rtk) is redux job providing it to react application is react redux
+
